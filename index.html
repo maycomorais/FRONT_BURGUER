@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BURGUER</title>
-    <script src="https://kit.fontawesome.com/71f92ea1b3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-
-  <div class="navbar">
-    <div class="max-width">
-        <div class="logo"><a href="#"><img src="./assets/img/logo.png" alt=""></a></div>
+    <script
+      src="https://kit.fontawesome.com/c08d346443.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#"><img src="./assets/img/logo.png" alt="" /></a>
+        </div>
         <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#cardapio">lanches</a></li>
-            <li><a href="#cardapio2">bebidas</a></li>
-            <li><a href="#cardapio3">porções</a></li>
-            <li><a href="#cardapio4">sobremesas</a></li>
+          <li><a href="#">Início</a></li>
+          <li><a href="#cardapio">lanches</a></li>
+          <li><a href="#cardapio2">bebidas</a></li>
+          <li><a href="#cardapio3">porções</a></li>
+          <li><a href="#cardapio4">sobremesas</a></li>
         </ul>
         <div class="criar">
           <a href="#"><i class="fa-solid fa-file-circle-plus"></i> criar</a>
         </div>
+      </div>
     </div>
-  </div>
 
-  <section class="cardapio" id="cardapio">
-    <div class="max-width">
+    <section class="cardapio" id="cardapio">
+      <div class="max-width">
         <h2 class="title">Aprecie sem moderação nossos</h2>
         <h2 class="title2">lanches</h2>
         <div class="pesquisar">
-          <input 
-          type="number"
-          id="inputIdburguer"
-          placeholder="Digite o número do ID"/>
+          <input
+            type="number"
+            id="inputIdburguer"
+            placeholder="Digite o nº do ID"
+          />
 
-          <button id="printarPorId"> ESCOLHER </button>
-          <div id="pesquisado">
-
-          </div>
+          <button id="printarPorId">ESCOLHER</button>
+          <div id="pesquisado"></div>
         </div>
-      <div class="cardapio-content">
-			  <article class="card" id="card">
-				  
-			  </article>
-			</div>
-    </div>
-  </section>
+        <div class="cardapio-content">
+          <article class="card" id="card"></article>
+        </div>
+      </div>
+    </section>
 
-  <section class="cardapio" id="cardapio2">
-    <div class="max-width">
+    <section class="cardapio" id="cardapio2">
+      <div class="max-width">
         <h2 class="title">Aprecie sem moderação nossas</h2>
         <h2 class="title2">bebidas</h2>
-      <div class="cardapio-content">
-			  <article class="card2" id="card2">
-				  
-			  </article>
-			</div>
-    </div>
-  </section>
+        <div class="cardapio-content">
+          <article class="card2" id="card2"></article>
+        </div>
+      </div>
+    </section>
 
-  <section class="cardapio" id="cardapio3">
-    <div class="max-width">
+    <section class="cardapio" id="cardapio3">
+      <div class="max-width">
         <h2 class="title">Aprecie sem moderação nossas</h2>
         <h2 class="title2">porções</h2>
-      <div class="cardapio-content">
-			  <article class="card3" id="card3">
-				  
-			  </article>
-			</div>
-    </div>
-  </section>
+        <div class="cardapio-content">
+          <article class="card3" id="card3"></article>
+        </div>
+      </div>
+    </section>
 
-  <section class="cardapio" id="cardapio4">
-    <div class="max-width">
+    <section class="cardapio" id="cardapio4">
+      <div class="max-width">
         <h2 class="title">Aprecie sem moderação nossas</h2>
         <h2 class="title2">sobremesas</h2>
-      <div class="cardapio-content">
-			  <article class="card4" id="card4">
-				  
-			  </article>
-			</div>
-    </div>
-  </section>
-  
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script type="module" src="./assets/script.js"></script>
-  
-</body>
+        <div class="cardapio-content">
+          <article class="card4" id="card4"></article>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./assets/script.js"></script>
+  </body>
 </html>

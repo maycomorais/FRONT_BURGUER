@@ -1,385 +1,396 @@
 /* Declaração de Fonte */
 @font-face {
-    font-family: 'Amatic';
-    src: url('./fonts/AmaticSC-Regular.ttf');
+  font-family: "Amatic";
+  src: url("./fonts/AmaticSC-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Iron';
-    src: url('./fonts/Iron\ &\ Brine.ttf');
+  font-family: "Iron";
+  src: url("./fonts/Iron\ &\ Brine.ttf");
 }
-:root{
-    --cor1: #962626;
-    --cor2: #ffc765;
-    --cor3: #fff
+:root {
+  --cor1: #962626;
+  --cor2: #ffc765;
+  --cor3: #fff;
 }
 
 /* Configuração do Documento */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-	text-transform: uppercase;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  text-transform: uppercase;
 }
-.max-width{
-    max-width: 1460px;
-    padding: 0 80px;
-    margin: auto;
+.max-width {
+  max-width: 1460px;
+  padding: 0 80px;
+  margin: auto;
 }
 
 /* Todos so códigos similares */
-section{
-    padding: 50px 0;
+section {
+  padding: 50px 0;
 }
-section .title{
-    font-family: 'Amatic', sans-serif;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--cor3);
-    position: relative;
-    margin-top: 50px;
+section .title {
+  font-family: "Amatic", sans-serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--cor3);
+  position: relative;
+  margin-top: 50px;
 }
-section .title2{
-    font-family: 'iron', sans-serif;
-    text-align: center;
-    font-size: 60px;
-    color: var(--cor1);
-    position: relative;
-    font-weight: 200;
-    margin-top: 5px;
-}
-section .title2::before{
-    position: relative;
-    content: url('./img/detalhe-titulo.png');
-    padding: 0 10px;
-}
-section .title2::after{
-    position: relative;
-    content: url('./img/detalhe-titulo-2.png');
-    padding: 0 10px;
+section .title2 {
+  font-family: "iron", sans-serif;
+  text-align: center;
+  font-size: 60px;
+  color: var(--cor1);
+  position: relative;
+  font-weight: 200;
+  margin-top: 5px;
 }
 
-
+section .title2::before {
+  position: relative;
+  content: url("./img/detalhe-titulo.png");
+  padding: 0 10px;
+}
+section .title2::after {
+  position: relative;
+  content: url("./img/detalhe-titulo-2.png");
+  padding: 0 10px;
+}
 
 /*..navbar...início*/
-.navbar{
-    position: fixed;
-    width: 100%;
-    padding: 5px 0;
-    font-family: 'Amatic', sans-serif;
-    z-index: 999;
-    background: var(--cor1);;
-    transition: all 0.3s ease;
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 5px 0;
+  font-family: "Amatic", sans-serif;
+  z-index: 999;
+  background: var(--cor1);
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
-.navbar .max-width{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.navbar .max-width {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar .logo img{
-    height: 70px;
-    transition: all 0.3s ease;
+.navbar .logo img {
+  height: 70px;
+  transition: all 0.3s ease;
+  opacity: 1;
 }
-.navbar .logo img:hover{
-   transform: scale(1.2);
+.navbar .logo img:hover {
+  transform: scale(1.2);
 }
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
 }
-.navbar.menu.active{
-    left: 0;
+.navbar.menu.active {
+  left: 0;
 }
-.navbar .menu li a{
-    color: var(--cor3);;
-    font-size: 25px;
-    font-weight: 600;
-    margin-left: 25px;
-    transition: all 0.3s ease;
+.navbar .menu li a {
+  color: var(--cor3);
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 25px;
+  transition: all 0.3s ease;
+  opacity: 1;
 }
-.navbar .criar a{
-    background: #fff;
-    color: var(--cor1);
-    font-size: 25px;
-    font-weight: 800;
-    padding: 8px 16px;
-    border: 5px solid #fff;
-    border-radius: 10px;
-    list-style: none;
-    transition: all 0.3s ease;
+.navbar .criar a {
+  background: #fff;
+  color: var(--cor1);
+  opacity: 0.8;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  list-style: none;
+  opacity: 1;
+  transition: all 0.3s ease;
 }
-.navbar .criar a:hover{
-    background: orange;
-    border: 5px solid orange;
-    color: var(--cor1);
+.navbar .criar a:hover {
+  background: orange;
+  border: 5px solid orange;
+  color: var(--cor1);
 }
-.navbar .menu li a:hover{
-    color: orange;
-    font-weight: 800;
-    transition: color 0.3s ease;
+.navbar .menu li a:hover {
+  color: orange;
+  font-weight: 800;
+  transition: color 0.3s ease;
 }
 
 /* Menu Mobile */
-.menu-btn{
-    color: #ffffff;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
+.menu-btn {
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
 }
 
 /* cardápio */
 
-.cardapio{
-    background: #111;
-    object-fit: cover;
-    color: #fff;
-    min-height: 100vh;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.cardapio {
+  background: #111;
+  object-fit: cover;
+  color: #fff;
+  min-height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-.cardapio-content{
-    align-items: center;
-    justify-content: center;
+.cardapio-content {
+  align-items: center;
+  justify-content: center;
 }
-.pesquisar{
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.pesquisar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-.pesquisar input{
-    height: 30px;
-    width: 200px;
-    border: none;
-    border-radius: 10px;
+.pesquisar input {
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 45px;
+  outline: none;
+  padding: 0 15px;
+  font-family: "iron";
+  text-align: center;
 }
-.pesquisar button{
-    font-family: 'iron';
-    font-size: 20px;
-    background: var(--cor1);
-    color: orange;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.90);
-    height: 30px;
-    width: 100px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    transition: all 0.3s ease;
+.pesquisar input:focus {
+  border-color: #b3b3b3;
 }
-.pesquisar button:hover{
-    transform: scale(1.1);
+.pesquisar button {
+  font-family: "iron";
+  font-size: 20px;
+  background: var(--cor1);
+  color: var(--cor3);
+  border: 2px solid orange;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.9);
+  height: 30px;
+  width: 150px;
+  border-radius: 45px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
 }
-
+.pesquisar button:hover {
+  background: var(--cor1);
+  color: orange;
+  transform: scale(1.1);
+  border: none;
+  cursor: pointer;
+}
 article.card,
 article.card2,
 article.card3,
 article.card4,
 #pesquisado {
-	border-radius: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 article.card .box:hover,
 article.card2 .box:hover,
 article.card3 .box:hover,
 article.card4 .box:hover,
 #pesquisado .box:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 article.card div.box,
 article.card2 div.box,
 article.card3 div.box,
 article.card4 div.box,
 #pesquisado div.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 350px;
-    margin: 15px;
-    transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 350px;
+  margin: 15px;
+  transition: all 0.3s ease;
 }
 article.card div.box img,
 article.card2 div.box img,
 article.card3 div.box img,
 article.card4 div.box img,
 #pesquisado div.box img {
-    height: 80%;
-    width: 100%;
-    object-fit: cover;
-    background: var(--cor3);
-    opacity: 0.5;
-	border-radius: 10px 10px 0 0;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  background: var(--cor3);
+  opacity: 0.5;
+  border-radius: 10px 10px 0 0;
 }
 article.card div.box:hover img,
 article.card2 div.box:hover img,
 article.card3 div.box:hover img,
 article.card4 div.box:hover img,
-#pesquisado div.box:hover img{
-	opacity: 1;
+#pesquisado div.box:hover img {
+  opacity: 1;
 }
 article.card div.box .nome,
 article.card2 div.box .nome,
 article.card3 div.box .nome,
 article.card4 div.box .nome,
-#pesquisado div.box .nome{
-    font-family: 'Iron';
-    font-size: 40px;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.90);
-    position: absolute;
-    transition: all 0.3s ease;
-    max-width: 300px;
-    text-align: center;
-    font-weight: 200;
-   
+#pesquisado div.box .nome {
+  font-family: "Iron";
+  font-size: 40px;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.9);
+  position: absolute;
+  transition: all 0.3s ease;
+  max-width: 300px;
+  text-align: center;
+  font-weight: 200;
 }
 article.card div.box .descricao,
 article.card2 div.box .descricao,
 article.card3 div.box .descricao,
 article.card4 div.box .descricao,
-#pesquisado div.box .descricao{
-    display: flex;
-    align-self: flex-end;
-    margin-bottom: 35px;
-    flex-direction: row;
-    font-size: 10px;
-    position: absolute;
-    font-family: "iron";
-    max-width: 300px;
-    text-align: center;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.90);
-    transition: all 0.3s ease;
+#pesquisado div.box .descricao {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 35px;
+  flex-direction: row;
+  font-size: 10px;
+  position: absolute;
+  font-family: "iron";
+  max-width: 300px;
+  text-align: center;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.9);
+  transition: all 0.3s ease;
 }
 article.card div.box:hover .descricao,
 article.card2 div.box:hover .descricao,
 article.card3 div.box:hover .descricao,
 article.card4 div.box:hover .descricao,
-#pesquisado div.box:hover .descricao{
-    opacity: 0;
+#pesquisado div.box:hover .descricao {
+  opacity: 0;
 }
 article.card div.box:hover .nome,
 article.card2 div.box:hover .nome,
 article.card3 div.box:hover .nome,
 article.card4 div.box:hover .nome,
-#pesquisado div.box:hover .nome{
-    opacity: 0;
+#pesquisado div.box:hover .nome {
+  opacity: 0;
 }
 article.card div.box .preco,
 article.card2 div.box .preco,
 article.card3 div.box .preco,
 article.card4 div.box .preco,
-#pesquisado div.box .preco{
-    font-family: 'iron';
-    position: fixed;
-    opacity: 0;
-    transition: all 0.8s ease;
+#pesquisado div.box .preco {
+  font-family: "iron";
+  position: fixed;
+  opacity: 0;
+  transition: all 0.8s ease;
 }
 article.card div.box:hover .preco,
 article.card2 div.box:hover .preco,
 article.card3 div.box:hover .preco,
 article.card4 div.box:hover .preco,
-#pesquisado div.box:hover .preco{
-    font-family: 'iron';
-    opacity: 1;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.94);
-    font-size: 70px;   
+#pesquisado div.box:hover .preco {
+  font-family: "iron";
+  opacity: 1;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.94);
+  font-size: 70px;
 }
 article.card div.box .preco span,
 article.card2 div.box .preco span,
 article.card3 div.box .preco span,
 article.card4 div.box .preco span,
-#pesquisado div.box .preco span{
-    color: var(--cor1);
+#pesquisado div.box .preco span {
+  color: var(--cor1);
 }
 article.card div.box:hover .preco span,
 article.card2 div.box:hover .preco span,
 article.card3 div.box:hover .preco span,
 article.card4 div.box:hover .preco span,
-#pesquisado div.box:hover .preco span{
-    opacity: 1;
-    font-size: 70px;
+#pesquisado div.box:hover .preco span {
+  opacity: 1;
+  font-size: 70px;
 }
 article.card .box .button,
 article.card2 .box .button,
 article.card3 .box .button,
 article.card4 .box .button,
-#pesquisado .box .button{
-    display: flex;
-    font-size: 20px;
-    justify-content: space-between;
-    align-self: flex-end;
-    position: absolute;
-    height: 32px;
-    width: 350px;
-    background-color: var(--cor1);
+#pesquisado .box .button {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-self: flex-end;
+  position: absolute;
+  height: 32px;
+  width: 350px;
 }
 article.card .box .button .editar,
 article.card2 .box .button .editar,
 article.card3 .box .button .editar,
 article.card4 .box .button .editar,
-#pesquisado .box .button .editar{
-    display: flex;
-    color: var(--cor2);
-    align-items: center;
-    justify-content: center;
-    background: var(--cor1);
-    height: 30px;
-    width: 50%;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.94);
-    transition: all 0.3s ease;
-    border-right: 1px solid #222;
+#pesquisado .box .button .editar {
+  display: flex;
+  color: var(--cor2);
+  align-items: center;
+  justify-content: center;
+  background: var(--cor1);
+  height: 30px;
+  width: 50%;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.94);
+  transition: all 0.3s ease;
+  border-right: 1px solid #222;
+  border-radius: 0 0 0px 10px;
 }
 article.card .box .button .deletar,
 article.card2 .box .button .deletar,
 article.card3 .box .button .deletar,
 article.card4 .box .button .deletar,
-#pesquisado .box .button .deletar{
-    display: flex;
-    color: var(--cor2);
-    align-items: center;
-    justify-content: center;
-    background: var(--cor1);
-    height: 30px;
-    width: 50%;
-    text-shadow: 1px 2px 2px rgba(10,4,3,0.94);
-    transition: all 0.8s ease;
+#pesquisado .box .button .deletar {
+  display: flex;
+  color: var(--cor2);
+  align-items: center;
+  justify-content: center;
+  background: var(--cor1);
+  height: 30px;
+  width: 50%;
+  text-shadow: 1px 2px 2px rgba(10, 4, 3, 0.94);
+  transition: all 0.8s ease;
+  border-radius: 0 0 10px 0px;
 }
 
 article.card div.button .editar:hover,
 article.card2 div.button .editar:hover,
 article.card3 div.button .editar:hover,
 article.card4 div.button .editar:hover,
-#pesquisado div.button .editar:hover{
-    background: #222;
-    color: orange;
-    height: 100%;
+#pesquisado div.button .editar:hover {
+  background: #222;
+  color: orange;
+  height: 100%;
 }
 article.card div.button .deletar:hover,
 article.card2 div.button .deletar:hover,
 article.card3 div.button .deletar:hover,
 article.card4 div.button .deletar:hover,
-#pesquisado div.button .deletar:hover{
-    background: #222;
-    color: orange;
-    height: 100%;
+#pesquisado div.button .deletar:hover {
+  background: #222;
+  color: orange;
+  height: 100%;
 }
 
-@media (max-width: 600px){
-    
-    
-    article.card div.button a{
-        padding: 5px 15px;
-        font-size: 18px;
-    }
+@media (max-width: 600px) {
+  article.card div.button a {
+    padding: 5px 15px;
+    font-size: 18px;
+  }
 }
